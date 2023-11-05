@@ -18,3 +18,7 @@
  - Every folder inside app can be a route, to override it use "_"  > app > _components
  - Route groups - organizational and has no effect on URL  >   app > (root) > page.tsx
  - DarkMode - https://ui.shadcn.com/docs/dark-mode/next
+ 
+
+## Third Party Services
+ - Context : https://docs.convex.dev/quickstart/nextjs
