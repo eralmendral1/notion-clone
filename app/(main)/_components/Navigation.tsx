@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'
 import { useState, useEffect, useRef, ElementRef } from 'react'
 import { useMediaQuery } from 'usehooks-ts'
 import { cn } from '@/lib/utils'
+import UserItem from './user-item'
 
 const Navigation = () => {
     const pathname = usePathname()
@@ -18,7 +19,7 @@ const Navigation = () => {
     const [isCollapsed, setIsCollapsed] = useState<boolean>(isMobile)
 
     useEffect(() => {
-        if(isMobile) {
+        if (isMobile) {
             collapse()
         } else {
             resetWidth()
@@ -26,7 +27,7 @@ const Navigation = () => {
     }, [isMobile])
 
     useEffect(() => {
-        if(isMobile) {
+        if (isMobile) {
             collapse()
         }
     }, [pathname, isMobile])
@@ -101,7 +102,7 @@ const Navigation = () => {
             </div>
 
             <div>
-                <p>Action Items</p>
+                <UserItem />
             </div>
 
             <div className="mt-4">
