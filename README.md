@@ -21,4 +21,5 @@
  
 
 ## Third Party Services
- - Context : https://docs.convex.dev/quickstart/nextjs
+ - Convex : https://docs.convex.dev/quickstart/nextjs
+ - Clerk : https://clerk.com/
